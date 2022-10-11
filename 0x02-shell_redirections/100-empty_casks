@@ -1,0 +1,2 @@
+#!/bash/bin
+find . -empty -printf "%f\n"
