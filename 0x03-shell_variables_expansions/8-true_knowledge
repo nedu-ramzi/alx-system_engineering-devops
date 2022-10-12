@@ -1,2 +1,2 @@
 #!/bin/bash
-$(($TRUEKNOWLEDGE=127+1))
+echo $(($TRUEKNOWLEDGE=127+1))
