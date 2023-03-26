@@ -1,0 +1,39 @@
+Image uploaded to im.ge
+Link: https://im.ge/i/Ilk4wy
+
+1. What are firewalls for:
+A firewall is a network security device that monitors incoming and outgoing network traffic and permits or blocks data packets based on a set of security rules. 
+Its purpose is to establish a barrier between your internal network and incoming traffic from external sources (such as the internet) 
+in order to block malicious traffic like viruses and hackers.
+
+2. Why is the traffic served over HTTPS:
+Http connections are in plain and information contained very visible to hacks.
+HTTPS uses the SSL/TLS protocol to encrypt communications so that attackers can't steal data. 
+SSL/TLS also confirms that a website server is who it says it is, preventing impersonations. 
+This stops multiple kinds of cyber attacks
+
+
+3. What monitoring is used for:
+A monitoring client is added to the infrastructure to help track the servers, load balancer, application e.t.c. Software monitoring will watch computer metrics, 
+record them, and emit an alert if something is unusual or that could make the computer not work properly happens.
+
+4. How the monitoring tool is collecting data:
+The monitoring tool receives logs and metrics from it's sources and sends the data to the monitoring system (Sumo service)
+
+5. Explain what to do if you want to monitor your web server QPS:
+Queries per second is a measure of the rate of traffic going through the server. In order to monitor the web server QPS (query per second), 
+we have to monitor for spikes in either direction.
+
+6. Issues with this Infrastructure
+
+a) Why terminating SSL at the load balancer level is an issue:
+Terminating SSL at load balancer level is an issue because it leaves traffic between the load balancer and web servers unencrypted. 
+Hence, data becomes vulnerable to theft and attacks.
+
+b) Why having only one MySQL server capable of accepting writes is an issue:
+If there is high volume of write requests, there will be pressure on the database that accepts the write requests and if the database fails, 
+the application would no longer be able to handle write requests.
+
+c. Why having servers with all the same components (database, web server and application server) might be a problem:
+It cause maintenance problems because if maintenance is performed on a server for a specific component, it will affect other components that are on it. 
+It could also be a problem when there is high traffic on a single component and we want to scale it seperately as scaling the other components will not be necessary.
