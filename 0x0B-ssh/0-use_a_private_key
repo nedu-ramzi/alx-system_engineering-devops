@@ -3,4 +3,4 @@
 # ~/.ssh/school with the user ubuntu
 # The -i flag specifies the private key to use for authentication.
 
-ssh -i ~/.ssh/school ubuntu@54.160.125.144
+ssh -i ~/.ssh/school ubuntu@52.91.120.249
