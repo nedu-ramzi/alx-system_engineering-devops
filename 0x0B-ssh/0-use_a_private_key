@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# script that uses ssh to connect to your server using the private key
+# ~/.ssh/school with the user ubuntu
+# The -i flag specifies the private key to use for authentication.
+
+ssh -i ~/.ssh/school ubuntu@18.204.13.231
