@@ -12,5 +12,5 @@ sudo apt-get -y install haproxy
 sudo nano /etc/haproxy/haproxy.cfg
 
 sudo sed -i -e '$aENABLED=1\n' /etc/default/haproxy
-sudo sed -i -e '$a\listen http-in\n\tbind :80\n\tbalance roundrobin\n\tserver 19605-web-01 34.203.75.215:80 check\n\tserver 19605-web-02 54.175.88.234:80 check\n' /etc/haproxy/haproxy.cfg
+sudo sed -i -e '$a\listen http-in\n\tbind *:80\n\tbalance roundrobin\n\tserver 178444-web-01 3.90.80.30:80 check\n\tserver 178444-web-02 100.25.180.71:80 check\n' /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
