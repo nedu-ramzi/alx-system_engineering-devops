@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# script that runs the whoami command under the user passed as argument
+
+username="$1"
+sudo -u "$username" whoami
