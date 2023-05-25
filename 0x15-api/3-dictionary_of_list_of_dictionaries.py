@@ -42,5 +42,5 @@ def export_all_employees_todo():
         json.dump(all_data, file)
 
 
-    if __name__ == '__main__':
-        export_all_employees_todo()
+if __name__ == '__main__':
+    export_all_employees_todo()
